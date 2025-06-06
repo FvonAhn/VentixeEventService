@@ -6,11 +6,11 @@ namespace EventService.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class EventController : ControllerBase
+    public class EventsController : ControllerBase
     {
         private readonly EventDbContext _context;
 
-        public EventController(EventDbContext context) 
+        public EventsController(EventDbContext context) 
         {
             _context = context;
         }
